@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.col-1 {
+    height: 100vh;
+    width: 20%;
+}
+
+.col-2 {
+    height: 100vh;
+    flex: 1;
+}
+
+.pl {
+    padding-left: 70px;
+}
+
+.pr {
+    padding-right: 242px;
+}
+
+.space-1 {
+    height: 300px;
+}
+
+.space-2 {
+    height: 150px;
+}
+
+.space-3 {
+    height: 100px;
+}
+
+.space-4 {
+    height: 350px;
+}
+
+.name{
+    width: 80%
+}
+
+.btn-darkmode{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.first-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-personal-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.container-intro {
+    background-color: #fdfdfe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.title-intro, .title-expertise, .title-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* padding-top: 40px; */
+}
+
+.title-intro, .title-skills{
+    background-color: #fdfdfe;
+}
+
+.title-skills{
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.container-expertise {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-skills {
+    background-color: #fdfdfe;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.gray {
+    color: #9ea7b0
+}
+
+.yellow {
+    color: #fbba0c;
+}
+
+.profission{
+    margin-top: 15px;
+}
+
+.personal-infos{
+    margin-top: 30px;
+    display: flex;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.location, .phone, .web, .email{
+    margin-right: 60px;
+}
+
+.personal-menu{
+    list-style: none;
+}
+
+.left-expertises, .right-expertises, .left-skills, .right-skills{
+    width: 50%;
+   
+}
+
+.expertise {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.title-expertiese{
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.number-expertise {
+    color: #fbba0c
+}
+
+.title-skill {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #f2f2f2;
+    position: relative;
+}
+  
+.progress-bar.js::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fbba0c;
+    animation: progressJs 5s linear;
+    width: 80%;
+}
+
+.progress-bar.node::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fbba0c;
+    animation: progressNode 5s linear;
+    width: 85%;
+}
+
+.progress-bar.git::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fbba0c;
+    animation: progressGit 5s linear;
+    width: 50%;
+}
+
+.progress-bar.php::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fbba0c;
+    animation: progressPhp 5s linear;
+    width: 70%;
+}
+
+.progress-bar.react::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fbba0c;
+    animation: progressReact 5s linear;
+    width: 60%;
+}
+
+.progress-bar.reactnative::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fbba0c;
+    animation: progressReactnative 5s linear;
+    width: 70%;
+}
+
+.progress-bar.sql::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fbba0c;
+    animation: progressSql 5s linear;
+    width: 50%;
+}
+
+.progress-bar.python::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fbba0c;
+    animation: progressPython 5s linear;
+    width: 40%;
+}
+  
+@keyframes progressJs  {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+
+@keyframes progressNode {
+    0% { width: 0%; }
+    100% { width: 85%; }
+}
+
+@keyframes progressGit  {
+    0% { width: 0%; }
+    100% { width: 50%; }
+}
+
+@keyframes progressPhp  {
+    0% { width: 0%; }
+    100% { width: 70%; }
+}
+
+@keyframes progressReact  {
+    0% { width: 0%; }
+    100% { width: 60%; }
+}
+
+@keyframes progressReactnative  {
+    0% { width: 0%; }
+    100% { width: 70%; }
+}
+
+@keyframes progressSql  {
+    0% { width: 0%; }
+    100% { width: 50%; }
+}
+
+@keyframes progressPython  {
+    0% { width: 0%; }
+    100% { width: 40%; }
+}
+
+.pfp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("https://avatars.githubusercontent.com/u/77819780?v=4");
+    background-size: cover;
+    background-position: center;
+}
+
+.text-title-intro{
+    font-size: 13px;
+    text-align: end;
+}
+
+.darkmode {
+    background-color: #454d55;
+}
+
+.color-white{
+    color: white !important;
+}
+.color-black {
+    color: black;
+}
